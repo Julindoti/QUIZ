@@ -1,0 +1,147 @@
+body{
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      font-size: medium;
+      justify-items: center;
+      justify-content: center;
+      flex-direction: column;
+      align-items:center;
+      display: flex;
+    
+    
+      background-color: rgba(46, 98, 228, 0.541);
+      
+}
+
+.container-forms{
+  border: 3px solid rgba(0, 0, 255, 0.521);
+    background-color: rgba(40, 103, 221, 0.781);
+    line-height: 27px;
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+    width:600px;
+    height:535px;
+    padding:20px;
+    position: relative;
+    justify-items: center;
+    align-self: center;
+    border-radius: 15px;
+    text-align: center;
+    padding: 30px;
+    transition: all 1.5s ease;
+    
+
+
+
+
+
+
+}
+@keyframes iluminacao {
+0%, 100%{
+
+  filter:drop-shadow(0 0 2px white);
+}  
+50%{
+
+
+  filter:drop-shadow(0 0 20px  white);
+}
+}
+h1{
+
+   text-align: center;
+   font-size: 45px;
+   width: 99%;
+   background-color: rgba(9, 9, 167, 0.712);
+   color:white;
+   border-radius: 20px;
+  height:60px;
+  padding:5px;
+
+  
+  
+
+   
+}
+
+h2{
+
+ text-align: center;
+
+
+}
+.quiz{
+  
+
+  width: 597px; 
+
+  height:2%;
+  transition: all 0.5s ease-in-out;
+}
+  
+.quizurembed{
+ height: 400px !important;
+ max-height: 400px !important;
+ border-radius: 5px !important;
+ overflow: hidden;
+
+
+}
+.rodape{
+
+      
+        background: url("/IMAGES/ce4c9d67fb6174aa268bf7e71c12b8ff.gif")  repeat-x;
+        transition: all 0.5s ease-in-out;
+        height: 300px;
+        width: 400px;
+
+}
+
+@media (max-width: 768px){
+
+    
+   .container-forms{
+      font-size:small;
+      width:375px;
+     
+   }
+   .quiz{
+
+    width: 375px;
+    height: 1%;
+
+   }
+
+}
+@media (max-width:480px){
+
+
+  .container-forms{
+    font-size: small;
+    width:300px;
+   
+ }
+ .quiz{
+
+  width: 300px;
+  height: 1%;
+
+ }
+
+}
+@media (prefers-color-scheme:dar){
+   body{
+
+    background-color: rgba(0, 17, 61, 0.87);
+
+   }
+
+    .container-forms{
+
+      animation: iluminacao 4s ease infinite;
+      
+
+    }
+
+}
