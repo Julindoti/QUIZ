@@ -1,3 +1,14 @@
+@font-face {
+  font-family: 'Minecraft';
+  src: url('minecraft.ttf') format('truetype');
+}
+:root{
+
+
+    --cor:rgba(9, 9, 100, 0.815);
+
+}
+
 body{
       font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
       font-size: medium;
@@ -13,14 +24,14 @@ body{
 }
 
 .container-forms{
-  border: 3px solid rgba(0, 0, 255, 0.521);
+    
     background-color: rgba(40, 103, 221, 0.781);
     line-height: 27px;
     display: flex;
     flex-direction: column;
     gap:20px;
     width:600px;
-    height:535px;
+    height:555px;
     padding:20px;
     position: relative;
     justify-items: center;
@@ -29,9 +40,13 @@ body{
     text-align: center;
     padding: 30px;
     transition: all 1.5s ease;
-    
+    font-size: 10px;
+    box-shadow:  -10px 0 0 0 var(--cor), 
+                 10px 0 0 0 var(--cor), 
+                 0  15px 0 0 var(--cor),
+                 0 -15px 0 0 var(--cor);
 
-
+    /*margin-bottom: 15px;*/         
 
 
 
@@ -48,8 +63,14 @@ body{
   filter:drop-shadow(0 0 20px  white);
 }
 }
-h1{
+.pixel{
 
+  font-family: 'Press Start 2P', cursive ; 
+   
+   
+}
+h1{
+      
    text-align: center;
    font-size: 45px;
    width: 99%;
@@ -84,6 +105,7 @@ h2{
  height: 400px !important;
  max-height: 400px !important;
  border-radius: 5px !important;
+ 
  overflow: hidden;
 
 
@@ -95,6 +117,19 @@ h2{
         transition: all 0.5s ease-in-out;
         height: 300px;
         width: 400px;
+
+}
+.seta{
+
+   position: relative;
+   display: flex;
+  height: 50px;
+  width: 70px;
+  margin-bottom: -10px;
+  margin-top: -20px;
+  margin-left: auto;
+  margin-right: auto;
+
 
 }
 
@@ -130,7 +165,7 @@ h2{
  }
 
 }
-@media (prefers-color-scheme:dar){
+@media (prefers-color-scheme:dark){
    body{
 
     background-color: rgba(0, 17, 61, 0.87);
