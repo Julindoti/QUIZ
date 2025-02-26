@@ -22,9 +22,9 @@ body{
       flex-direction: column;
       align-items:center;
       display: flex;
+    color: white;
     
-    
-      background-color: rgba(46, 98, 228, 0.541);
+      background-color: var(--cor);
       
 }
 
@@ -46,6 +46,8 @@ body{
     padding: 30px;
     transition: all 1.5s ease;
     font-size: 10px;
+    margin-left: auto;
+    margin-right: auto;
     box-shadow:  -10px 0 0 0 var(--cor), 
                  10px 0 0 0 var(--cor), 
                  0  15px 0 0 var(--cor),
@@ -74,7 +76,7 @@ body{
    
    
 }
-h1{
+.titulo-quiz{
 
    padding-top: 10px;
    text-align: center;
@@ -135,6 +137,21 @@ h2{
         width: 400px;
 
 }
+.titulos{
+  padding-left:5px;
+  display: flex;
+  font-size:26px ;
+  line-height: 40px;
+  height: 100px;
+  background-color: var(--cor);
+  width: 105%;
+  position: relative;
+  left:-10px;
+  color:white;
+  text-align: left;
+  align-items: center;
+  
+}
 .seta{
 
    position: relative;
@@ -153,6 +170,21 @@ a{
     margin-top: 5px;
 
 }
+.formatacao{
+ 
+   display: flex;
+   flex-direction: column;
+   text-align: left;
+   font-size: large;
+   line-height: 26px;
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+.mb{
+
+      margin-bottom: 5px;
+
+}
 a{
   padding: 10px;
   position: relative;
@@ -163,12 +195,25 @@ a{
  margin-right: auto;
  bottom: 10px;
  
- 
-
-
 
 }
+hr{
 
+  height: 5px;
+  width: 100%;
+  background-color: blue;
+}
+.ultimo-titulo{
+
+   font-size: 20px !important;
+
+}
+.cadeado{
+
+
+     width: 80px;
+     height: 80px;
+}
 @media (max-width: 768px){
 
     
