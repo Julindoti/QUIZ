@@ -1,16 +1,8 @@
-@font-face {
-  font-family: 'Minecraft';
-  src: url('minecraft.ttf') format('truetype');
-}
+
 :root{
 
 
-    --cor:rgba(9, 9, 100, 0.815);
-    --brilho:
-
-      animation: iluminacao 4s ease-in-out infinite;
-
-    ;
+    --cor:rgba(9, 9, 73, 0.774);
 
 }
 
@@ -22,9 +14,11 @@ body{
       flex-direction: column;
       align-items:center;
       display: flex;
+      overflow-x: hidden;
     color: white;
     
-      background-color: var(--cor);
+     
+      background-color: rgb(9, 9, 131);
       
 }
 
@@ -138,18 +132,20 @@ h2{
 
 }
 .titulos{
-  padding-left:5px;
+ 
   display: flex;
+  padding-left: 10px;
   font-size:26px ;
   line-height: 40px;
   height: 100px;
   background-color: var(--cor);
-  width: 105%;
+  width: 90%;
   position: relative;
   left:-10px;
   color:white;
   text-align: left;
   align-items: center;
+  overflow: hidden;
   
 }
 .seta{
@@ -171,7 +167,8 @@ a{
 
 }
 .formatacao{
- 
+  position: relative;
+   z-index: 1;
    display: flex;
    flex-direction: column;
    text-align: left;
@@ -211,9 +208,33 @@ hr{
 .cadeado{
 
 
-     width: 80px;
+     width: 70px;
      height: 80px;
+     display: flex;
+     position: relative;
+     margin-left: auto;
+     margin-right: auto;
+     bottom: -10px ;
 }
+.fundo{
+  background-image: url('/IMAGES/il_fullxfull.5021761641_r78a.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position:absolute;
+  top: -5px;
+ margin-left: -150px;
+   overflow-x: hidden;
+  opacity: 0.5;
+  width: 120%;
+  height: 153%;
+
+ 
+
+
+
+}
+
 @media (max-width: 768px){
 
     
@@ -239,27 +260,85 @@ hr{
    margin-right: auto;
    bottom: 10px;
    
-   
+  
+}
+.fundo{
+  overflow-x: hidden;
+  top: -10px;
+
+  margin-left: -100px;
+  opacity: 0.6;
+  display: flex;
+  margin-left: 100px;
+  width: 100%;
+
+  height: 60%;
+
+  
+}
+
+}
+@media (max-width:500px){
+
+
+
+.container-forms{
+  font-size: 10px;
+  width:300px;
+ height:640px;
+
+}
+.quiz{
+
+width: 300px;
+height: 1%;}
+
+a{
+  position: relative;
+ display: flex;
+ justify-content: center;
+ margin-top: 4px;
+ margin-left: 30px;
+ margin-right: auto;
+ 
+
+}
+.fundo{
+  overflow-x:  hidden;
+top: -10px;
+
+margin-left: -12px;
+opacity: 0.6;
+width: 101%;
+
+height: 60%;
 
 
 
 }
 
+
 }
-@media (max-width:480px){
 
 
+@media (max-width:400px){
+
+  .body{
+
+     margin-left: -10px;
+  }
   .container-forms{
     font-size: 10px;
     width:300px;
    height:640px;
-   
+
+ 
  }
  .quiz{
 
   width: 300px;
   height: 1%;
-
+ }
   a{
     position: relative;
    display: flex;
@@ -268,13 +347,51 @@ hr{
    margin-left: 30px;
    margin-right: auto;
    
+
+ }
+ .fundo{
+  overflow: hidden;
+  top: -10px;
+ 
+  margin-left: -100px;
+  overflow-x: hidden;
+ left: 100px;
+  opacity: 0.6;
+  width: 100%;
+
+  height: 60%;
+} 
+
+ 
+}
+@media (max-width:361px){
+
+  .fundo{
+    overflow: hidden;
+    top: -10px;
    
+    margin-left: -100px;
+    overflow-x: hidden;
+   left: 100px;
+    opacity: 0.6;
+    width: 100%;
+  
+    height: 60%;
+  } 
+  .container-forms{
+    font-size: 10px;
+    width:250px;
+   height:630px;
 
-
-
-
+ 
  }
+ .quiz{
+
+  width: 250px;
+  height: -1%;
  }
+
+
 }
 @media (prefers-color-scheme:dsrk){
    body{
