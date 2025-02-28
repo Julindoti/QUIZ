@@ -65,9 +65,21 @@ body{
   filter:drop-shadow(0 0 20px  white);
 }
 }
+
+.ajusteajuste{
+
+    display: flex;
+    text-align: center;
+
+
+
+
+}
 .pixel{
 
   font-family: 'Press Start 2P', cursive ; 
+  text-align: center !important;
+
    
    
 }
@@ -145,8 +157,9 @@ line-height: 25px !important;
   position: relative;
   left:-10px;
   color:white;
-  text-align: left;
+  text-align: center !important;
   align-items: center;
+  justify-content: center;
   overflow: hidden;
   
 }
@@ -246,8 +259,8 @@ hr{
 }
 .pixel-ajuste{
 
-  line-height: 25px !important;
-  font-size: 28px !important;
+  line-height:  30px !important;
+  font-size: 27px !important;
 }
 .imagem{
   display: flex;
