@@ -72,11 +72,12 @@ body{
    
 }
 .titulo-quiz{
-
-   padding-top: 35px !important;
+ margin-right: auto;
+ margin-left: auto;
+   padding-top: 10px !important;
    text-align: center;
    font-size: 45px;
-   width: 100%;
+   width: 600px;
    background-color: var(--cor);
    color:white;
    border-radius: 20px;
@@ -140,7 +141,7 @@ h2{
 line-height: 25px !important;
   height: 100px;
   background-color: var(--cor);
-  width: 90%;
+  width: 102%;
   position: relative;
   left:-10px;
   color:white;
@@ -182,7 +183,7 @@ a{
    font-size: large;
    line-height: 26px;
    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-
+  line-height: 27px;
 }
 .mb{
 
@@ -223,7 +224,7 @@ hr{
      position: relative;
      margin-left: auto;
      margin-right: auto;
-     bottom: -10px ;
+     bottom: -7px ;
 }
 .fundo{
   background-image: url('/IMAGES/il_fullxfull.5021761641_r78a.webp');
@@ -351,6 +352,11 @@ hr{
     font-size:13px !important ;
     height: 150px;
 
+}
+.titulo-quiz{
+
+  width: 100%;
+  padding-top: 35px !important;
 }
 
 }
